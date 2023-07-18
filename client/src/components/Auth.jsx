@@ -17,7 +17,6 @@ const Auth = () => {
               className="border border-gray-200 rounded-md p-1 w-80 mx-auto"
             />
           </div>
-
           <div className="mb-4">
             <label
               htmlFor="password"
