@@ -1,5 +1,5 @@
 import React from "react";
-import { counterActions } from "../store/index";
+import { counterActions } from "../store/counter-slice";
 import { useSelector, useDispatch } from "react-redux";
 
 const Counter = () => {
