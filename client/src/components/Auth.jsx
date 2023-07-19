@@ -1,10 +1,19 @@
 import React from "react";
+import { authActions } from "../store/index";
+import { useDispatch } from "react-redux";
 
 const Auth = () => {
+  const dispatch = useDispatch();
+
+  const submitCredentialsHandler = (e) => {
+    e.preventDefault();
+
+    dispatch(authActions.login());
+  };
   return (
     <>
       <main className="text-center p-4 my-20 mx-auto max-w-2xl rounded-lg bg-white shadow-md">
-        <form>
+        <form onSubmit={submitCredentialsHandler}>
           <div className="mb-4">
             <label
               htmlFor="email"
